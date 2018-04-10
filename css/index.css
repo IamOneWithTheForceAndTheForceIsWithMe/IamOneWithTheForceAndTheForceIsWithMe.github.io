@@ -1,0 +1,198 @@
+@import url("https://fonts.googleapis.com/css?family=Press+Start+2P");
+body{
+    /*seamless pattern (texture)*/
+    background-image: url("pictures/thematix.jpg");
+}
+button, #inputId, #resultDivId{
+    font-family: 'Press Start 2P', cursive;
+}
+button:hover {
+    color: lawngreen;
+}
+.buttonsClass{
+    background-color: black;
+    color: green;
+}
+.mainButtons{
+    background-color: black;
+    color: green;
+    border: 2px solid red;
+}
+footer{
+    margin: 64px auto auto auto;
+    max-width: 800px;
+    display: flex;
+    justify-content: space-between;
+}
+footer #arrowDivId span{
+    background-color: black;
+    padding: 2px;
+    font-family: 'Press Start 2P', cursive;
+    color: red;
+}
+footer #arrowDivId button{
+    background-color: black;
+    border: 2px solid green;
+}
+footer #arrowDivId button:hover{
+    border: 4px solid lawngreen;
+}
+footer #manualId{
+    padding: 8px;
+    background-color: white;
+    visibility: hidden;
+    font-family: "Times New Roman";
+    background-color: blue;
+    color: yellow;
+    flex-basis: 500px;
+}
+#calculatorId{
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 4px;
+}
+#calculatorId #inputId{
+    padding: 4px;
+    background-color: black;
+    color: green;
+    border: 2px solid red;
+    font-size: 1.15em;
+    grid-column: 1/3;
+}
+#calculatorId #resultDivId{
+    padding: 4px;
+    background-color: black;
+    border: 2px solid red;
+    color: green;
+    grid-column: 1/3;
+}
+#calculatorId #numbersId{
+    min-width: 142px;/*not necessary*/
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+#calculatorId #operationsId{
+    min-width: 142px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+#calculatorId #controllerId{
+    min-width: 142px;/*not necessary*/
+    grid-column: 1/3;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+#calculatorId #controllerId #equalingButtonId{
+    grid-column: 1/3;
+}
+@media (min-width: 400px) {
+    #calculatorId{
+        margin: auto;/*not necessary*/
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 8px;
+    }
+    #calculatorId #inputId{
+        grid-column: 1/4;
+    }
+    #calculatorId #resultDivId{
+        grid-column: 1/4;
+    }
+    #calculatorId #numbersId{
+        grid-column: 1/2;
+        display: grid;
+        grid-gap: 2px;
+        grid-template-columns: repeat(3,1fr);
+    }
+    #calculatorId #operationsId{
+        grid-column: 2/4;
+        display: grid;
+        grid-gap: 2px;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(7, 32px);
+    }
+    #calculatorId #controllerId{
+        grid-column: 1/4;
+        display: grid;
+        grid-gap: 2px;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 32px;
+    }
+    #calculatorId #controllerId #equalingButtonId{
+        grid-column: 3/4;/*put this to override
+        previous template*/
+    }
+}
+@media (min-width: 500px){
+    button, #inputId, #resultDivId{
+        font-size: 1.2em;
+    }
+    #calculatorId{
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 16px;
+    }
+    #calculatorId #inputId{
+        grid-column: 1/3;
+        font-size: 1.4em;
+    }
+    #calculatorId #resultDivId{
+        grid-column: 1/3;
+    }
+    #calculatorId #numbersId{
+        grid-column: 1/2;
+        display: grid;
+        grid-gap: 4px;
+        grid-template-columns: repeat(3,1fr);
+    }
+    #calculatorId #operationsId{
+        grid-column: 2/3;
+        display: grid;
+        grid-gap: 4px;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(7, 48px);
+    }
+    #calculatorId #controllerId{
+        grid-column: 1/3;
+        display: grid;
+        grid-gap: 4px;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 32px;
+    }
+}
+@media (min-width: 600px) {
+    #calculatorId{
+        margin: auto;
+        max-width: 800px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 16px;
+    }
+    #calculatorId #inputId{
+        grid-column: 1/4;
+    }
+    #calculatorId #resultDivId{
+        grid-column: 1/4;
+    }
+    #calculatorId #controllerId{
+        grid-column: 3/4;
+        display: grid;
+        grid-template-columns: repeat(1, auto);
+        grid-template-rows: repeat(4, 1fr);
+    }
+    #calculatorId #controllerId #clearingButtonId{
+        grid-column: 1/2;/*put this to override
+        previous template*/
+        grid-row: 1/2;
+    }
+    #calculatorId #controllerId #backSpaceButtonId{
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+    #calculatorId #controllerId #equalingButtonId{
+        grid-column: 1/2;
+        grid-row: 3/5;
+    }
+}

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="keywords" content="HTML, CSS, JS">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="calculator">
+        <meta name="author" content="Yurii Koval">
+        <link href="css/index.css" rel="stylesheet">
+        <link href="favicon/calculator_favicon.png" rel="icon">
+        <title>Calculator</title>
+    </head>
+    <body>
+        <div id="calculatorId">
+            <textarea id="inputId" placeholder="0.00"></textarea>
+            <div id="resultDivId">
+                <p>
+                    Result: <span id="resultId">0</span>
+                </p>
+            </div>
+            <div id="numbersId">
+                <!--Numbers-->
+                <button id="oneId" class="buttonsClass" value="1">1</button>
+                <button id="twoId" class="buttonsClass" value="2">2</button>
+                <button id="threeId" class="buttonsClass" value="3">3</button>
+                <button id="fourId" class="buttonsClass" value="4">4</button>
+                <button id="fiveId" class="buttonsClass" value="5">5</button>
+                <button id="sixId" class="buttonsClass" value="6">6</button>
+                <button id="sevenId" class="buttonsClass" value="7">7</button>
+                <button id="eightId" class="buttonsClass" value="8">8</button>
+                <button id="nineId" class="buttonsClass" value="9">9</button>
+                <button id="zeroId" class="buttonsClass" value="0">0</button>
+                <!--Constants-->
+                <button id="piNumberId" class="buttonsClass" value="Math.PI">pi</button>
+                <button id="eulerNumberId" class="buttonsClass" value="Math.E">e</button>
+            </div>
+            <div id="operationsId">
+                <button id="openBracketId" class="buttonsClass" value="(">(</button>
+                <button id="closeBracketId" class="buttonsClass" value=")">)</button>
+                <button id="pointId" class="buttonsClass" value=".">.</button>
+                <button id="comaId" class="buttonsClass" value=",">,</button>
+                <!--Main arithmetic operations-->
+                <button id="additionId" class="buttonsClass" value="+">+</button>
+                <button id="subtractionId" class="buttonsClass" value="-">-</button>
+                <button id="multiplicationId" class="buttonsClass" value="*">*</button>
+                <button id="divisionId" class="buttonsClass" value="/">/</button>
+                <!--Advanced mathematical operations-->
+                <button id="powerId" class="buttonsClass" value="Math.pow">pow</button>
+                <button id="logId" class="buttonsClass" value="log">log</button>
+                <button id="sinId" class="buttonsClass" value="Math.sin">sin</button>
+                <button id="cosId" class="buttonsClass" value="Math.cos">cos</button>
+                <button id="tanId" class="buttonsClass" value="Math.tan">tan</button>
+                <button id="factorial" class="buttonsClass" value="fact">fact</button>
+            </div>
+            <div id="controllerId">
+                <button id="clearingButtonId" class="mainButtons">clean</button>
+                <button id="backSpaceButtonId" class="mainButtons">backspace</button>
+                <button id="equalingButtonId" class="mainButtons">equals</button>
+            </div>
+        </div>
+        <footer>
+            <div id="arrowDivId"> <span>Meaning of buttons:</span>
+                <br>
+                <button id="arrowButtonId">
+                    <img id="arrowImageId" src="css/pictures/right_arrow.png" alt="an arrow to the right">
+                </button>
+            </div>
+            <div id="manualId">
+                <ul>
+                    <li>pi ==> Math.PI</li>
+                    <li>e ==> Math.E</li>
+                    <li>pow ==> Math.pow(base, power)</li>
+                    <li>log ==> log(base, value)</li>
+                    <li>sin, cos, tan ==> Math.func(rad)</li>
+                    <li>fact ==> fact(value)</li>
+                </ul>
+            <p>Example, <br>Math.sin(Math.PI/2)+<br>Math.pow(2,3)+<br>log(2,16)-4+2 = 11</p>
+            </div>
+        </footer>
+        <script src="javascript/index.js"></script>
+    </body>
+</html>
