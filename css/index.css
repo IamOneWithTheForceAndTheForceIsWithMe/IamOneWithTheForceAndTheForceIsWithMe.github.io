@@ -5,6 +5,7 @@ body{
 }
 button, #inputId, #resultDivId{
     font-family: 'Press Start 2P', cursive;
+    line-height: 40px;
 }
 button:hover {
     color: lawngreen;
